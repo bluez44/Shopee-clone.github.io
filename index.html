@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/shopee-icon.png">
+
+    <title>Shopee clone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid wide">
+                <nav class="header__navbar roboto-light">
+                    <ul class="navbar__list row">
+                        <li class="navbar__item qr__code col">
+                            Vào cửa hàng trên ứng dụng F8-shop
+                            <div class="header__qr">
+                                <img src="assets/img/myZaloQRCode.jpg" alt="" class="header__qr--img">
+                                <div class="row no-gutters header__qr--apps">
+                                    <div class="col l-6 c-12">
+                                        <a href="#" class="header__qr--link">
+                                            <img src="assets/img/google play.png" alt="" class="header__qr--download-img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-6 c-12">
+                                        <a href="#" class="header__qr--link">
+                                            <img src="assets/img/google play.png" alt="" class="header__qr--download-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__item--separate"></li>
+                        <li class="navbar__item no_hover col">
+                            Kết nối
+                            <a class="navbar__item--link" href="#">
+                                <i class="fa-brands fa-facebook navbar__item--icon"></i>
+                            </a>
+                            <a class="navbar__item--link" href="#">
+                                <i class="fa-brands fa-instagram navbar__item--icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="navbar__list row">
+                        <li class="navbar__item navbar__item--notification col">
+                            <a class="navbar__item--link" href="#">
+                                <i class="fa-solid fa-bell navbar__item--icon"></i>
+                                Thông báo
+                            </a>
+
+                            <div class="header__notification">
+                                <header class="header__notification--header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+
+                                <ul class="header__notification--list">
+                                    <li class="header__notification--item">
+                                        <a href="#" class="header__notification--link">
+                                            <div class="header__notification--products">
+                                                <img src="assets/img/images.jpg" alt="" class="header__notification--img">
+                                                <p class="header__notification--name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</p>
+                                            </div>
+                                            <p class="header__notification--description">Hidden tag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay</p>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notification--item header__notification--item--read">
+                                        <a href="#" class="header__notification--link">
+                                            <div class="header__notification--products">
+                                                <img src="assets/img/images.jpg" alt="" class="header__notification--img">
+                                                <p class="header__notification--name">Sale sốc bộ dưỡng Ohui The First Tái tạo trẻ hóa da SALE OFF 70%</p>
+                                            </div>
+                                            <p class="header__notification--description">Giá chỉ còn 375.000 (giá gốc: 1.250.000 vn).</p>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notification--item">
+                                        <a href="#" class="header__notification--link">
+                                            <div class="header__notification--products">
+                                                <img src="assets/img/images.jpg" alt="" class="header__notification--img">
+                                                <p class="header__notification--name">Ohui chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK</p>
+                                            </div>
+                                            <p class="header__notification--description">Một làn môi căng mềm, quyến rũ với sắc màu nội bật là điều mà các quý cô ao ước</p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                                <footer class="header__notification--footer">
+                                    <a href="#">
+                                        <h3>Xem tất cả</h3>    
+                                    </a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="navbar__item col">
+                            <a class="navbar__item--link" href="#">
+                                <i class="fa-solid fa-question navbar__item--icon"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li id="signup_btn" class="navbar__item navbar__item--bold col">Đăng ký</li>
+                        <li class="navbar__item--separate"></li>
+                        <li id="login_btn" class="navbar__item navbar__item--bold col">Đăng nhập</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+
+        </div>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+    <div id="signup_container" class="modal">
+        <div id="signup_form" class="modal__content">
+            <div class="form--header">
+                <h3 class="form--title roboto-medium">Đăng Ký</h3>
+                <a href="#" class="form--redireact">
+                    <h4 class="form--redireact-text roboto-medium">Đăng nhập</h4>
+                </a>
+            </div>
+
+            <form action="">
+                <div class="form--infor roboto-light">
+                    <input autocomplete="off" required id="signup_username" name="signup_username" type="text" placeholder="Email/Số Điện Thoại/Tên đăng nhập">
+    
+                    <input required id="signup_password" name="signup_password" type="password" placeholder="Mật khẩu">
+
+                    <input required id="signup_repassword" name="signup_repassword" type="password" placeholder="Nhập lại mật khẩu">
+                </div>
+
+                <div class="form--policy">
+                    <p class="form--policy-text roboto-medium">Bằng việc đăng ký, bạn đã đồng ý với Shopee về <a href="#" class="form--policy-link">điều khoản dịch vụ</a> & <a href="#" class="form--policy-link">Chính sách bảo mật</a></p>
+                </div>
+
+                <div class="form--action signup__form--action roboto-medium">
+                    <button id="signup_form_cancel" class="signup__form--cancel_btn btn btn--l btn--secondary">
+                        Trở lại
+                    </button>
+                    <button class="signup__form--signup_btn btn btn--l btn--primary">
+                        Đăng ký
+                    </button>
+                </div>
+    
+                <div class="form--footer">
+                    <p class="roboto-regular">Hoặc đăng nhập/đăng ký bằng</p>
+
+                    <div class="form--socials">
+                        <button class="form--sms_btn btn btn--s btn--socials roboto-regular">
+                            <i class="fa-solid fa-comment-sms"></i>
+                            <p>SMS</p>
+                        </button>
+        
+                        <button class="form--fb_btn btn btn--s btn--socials roboto-regular">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <p>Facebook</p>
+                        </button>
+        
+                        <button class="form--google_btn btn btn--s btn--socials roboto-regular">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <p>Google</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="login_container" class="modal">
+        <div id="login_form" class="modal__content">
+            <div class="form--header">
+                <h3 class="form--title roboto-medium">Đăng Nhập</h3>
+                <a href="#" class="form--redireact">
+                    <h4 class="form--redireact-text roboto-medium">Đăng ký</h4>
+                </a>
+            </div>
+
+            <form action="">
+                <div class="form--infor roboto-light">
+                    <input autocomplete="off" required id="login_username" name="login_username" type="text" placeholder="Email/Số Điện Thoại/Tên đăng nhập">
+    
+                    <input required id="login_password" name="login_password" type="password" placeholder="Mật khẩu">
+                </div>
+    
+                <div class="form--services roboto-regular">
+                    <div class="form--forgotpassword">
+                        <a href="#">Quên Mật Khẩu</a>
+                    </div>
+                    <div class="form--help">
+                        <a href="#">Cần trợ giúp?</a>
+                    </div>
+                </div>
+    
+                <div class="form--action login__form--action roboto-medium">
+                    <button id="login_form_cancel" class="login__form--cancel_btn btn btn--l btn--secondary">
+                        Trở lại
+                    </button>
+                    <button class="login__form--login_btn btn btn--l btn--primary">
+                        Đăng nhập
+                    </button>
+                </div>
+    
+                <div class="form--footer">
+                    <p class="roboto-regular">Hoặc đăng nhập/đăng ký bằng</p>
+
+                    <div class="form--socials">
+                        <button class="form--sms_btn btn btn--s btn--socials roboto-regular">
+                            <i class="fa-solid fa-comment-sms"></i>
+                            <p>SMS</p>
+                        </button>
+        
+                        <button class="form--fb_btn btn btn--s btn--socials roboto-regular">
+                            <i class="fa-brands fa-square-facebook"></i>
+                            <p>Facebook</p>
+                        </button>
+        
+                        <button class="form--google_btn btn btn--s btn--socials roboto-regular">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <p>Google</p>
+                        </button>
+    
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="assets/js/main.js"></script>
+</html>

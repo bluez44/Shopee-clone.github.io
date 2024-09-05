@@ -1,0 +1,304 @@
+:root { 
+    --primary-color: rgb(238, 77, 45);
+    --primary-color-rgba: rgba(238, 77, 45, 0.2);
+    --primary-color-read: rgba(238, 77, 45, 0.01);
+    --primary-color-hov: rgba(238, 77, 45, 0.05);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --sms-theme: #0f890c;
+    --facebook-theme: #294071;
+    --google-theme: #cacaca;
+    --border-color: #dbdbdb;
+}
+
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+html {
+    font-size: 62.5%; /* ~~ 10px ~~ 1rem */
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    transition: all .3s;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+
+/* Modal */
+.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    animation: fade-in linear .4s forwards
+}
+
+.modal__content {
+    width: 600px;
+    background-color: var(--white-color);
+    margin: auto;
+    padding: 32px;
+    border-radius: 12px;
+    animation: scale-out ease .7s forwards;
+}
+
+/* Display */
+.d-none {
+    display: none !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-block {
+    display: block;
+}
+
+/* Animation */
+.animate-none {
+    animation: none !important;
+}
+
+/* GENERAL FORM */
+.form--header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    padding: 0 8px;
+}
+
+.form--header a {
+    text-decoration: none;
+}
+
+.form--title {
+    font-size: 2.6rem;
+}
+
+.form--redireact-text {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.form--title,
+.form--redireact-text {
+    margin: 0;
+}
+
+.form--infor {
+    margin-bottom: 6px;
+}
+
+.form--infor input {
+    width: 100%;
+    padding: 12px 12px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    margin-bottom: 12px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    transition: .3s;
+}
+
+.form--infor input:focus {
+    border: 1px solid #888;
+}
+
+.form--policy {
+    margin-bottom: 100px;
+}
+
+.form--policy-text {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 0 12px;
+    margin: 0;
+}
+
+.form--policy-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.form--services {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 48px;
+}
+
+.form--services div {
+}
+
+.form--services a {
+    text-decoration: none;
+    padding: 8px;
+}
+
+.form--forgotpassword,
+.form--help {
+    font-size: 1.4rem;
+}
+
+.form--help {
+    margin-right: -8px;
+}
+
+.form--forgotpassword a{
+    color: var(--primary-color);
+}
+
+.form--help a{
+    color: #b7b7b7;
+}
+
+.form--action {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+}
+
+.form--footer {
+    margin: -32px -32px;
+    background-color:rgba(198, 198, 198, 0.3);
+    padding: 16px 32px;
+}
+
+.form--footer p {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.form--socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form--footer button {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.form--footer button:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.form--footer button i {
+    font-size: 2rem;
+    margin-right: 4px;
+}
+
+.form--footer button p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Button */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 142px;
+    min-height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn.btn--l {
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+
+.btn.btn--s {
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}   
+
+.btn.btn--primary:hover {
+    opacity: 0.91;
+}
+
+.btn.btn--secondary {
+    background-color: var(--white-color);
+}
+
+.btn.btn--secondary:hover {
+    background-color: #D3D3D3;
+}
+
+.btn.btn--primary,
+.btn.btn--secondary {
+    border: none;
+}
+
+.form--sms_btn {
+    background-color: var(--sms-theme);
+    color: var(--white-color);
+}
+
+.form--fb_btn {
+    background-color: var(--facebook-theme);
+    color: var(--white-color);
+}
+
+.form--google_btn {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: all .5s;
+}
+
+.form--google_btn:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
