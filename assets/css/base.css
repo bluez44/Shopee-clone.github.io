@@ -10,6 +10,10 @@
     --facebook-theme: #294071;
     --google-theme: #cacaca;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --header__navbar-height: 38px;
+    --header__search_bar-height: calc(var(--header-height) - var(--header__navbar-height));
 }
 
 * {
@@ -30,6 +34,12 @@ body {
 
 button {
     transition: all .3s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .roboto-regular {
@@ -241,8 +251,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 142px;
-    min-height: 36px;
     text-decoration: none;
     border: none;
     border-radius: 3px;
@@ -252,12 +260,10 @@ button {
 
 .btn.btn--l {
     padding: 16px 32px;
-    border-radius: 4px;
 }
 
 .btn.btn--s {
     padding: 8px 16px;
-    border-radius: 4px;
 }
 
 .btn.btn--primary {
@@ -275,11 +281,6 @@ button {
 
 .btn.btn--secondary:hover {
     background-color: #D3D3D3;
-}
-
-.btn.btn--primary,
-.btn.btn--secondary {
-    border: none;
 }
 
 .form--sms_btn {
