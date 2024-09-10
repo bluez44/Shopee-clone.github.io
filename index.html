@@ -112,9 +112,27 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li id="signup_btn" class="navbar__item navbar__item--bold col">Đăng ký</li>
+
+                        <!-- Login/Sign up -->
+                        <!-- <li id="signup_btn" class="navbar__item navbar__item--bold col">Đăng ký</li>
                         <li class="separate_bar"></li>
-                        <li id="login_btn" class="navbar__item navbar__item--bold col">Đăng nhập</li>
+                        <li id="login_btn" class="navbar__item navbar__item--bold col">Đăng nhập</li> -->
+                        <!-- Login/Sign up -->
+
+                        <!-- User -->
+                        <li class="navbar__item col navbar__user">
+                            <img src="https://toppng.com/uploads/preview/user-account-management-logo-user-icon-11562867145a56rus2zwu.png" alt="" class="navbar__user__avt">
+                            <span class="navbar__user__name">Quang Vinh</span>
+
+                            <ul class="navbar__user__infor">
+                                <li class="navbar__user__item"><a href="#">Tài khoản của tôi</a></li>
+                                <li class="navbar__user__item"><a href="#">Địa chỉ của tôi</a></li>
+                                <li class="navbar__user__item"><a href="#">Đơn mua</a></li>
+                                <li class="navbar__user__item"><a href="#">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                        <!-- User -->
+
                     </ul>
                 </nav>
                 <!-- Header navbar -->
@@ -173,11 +191,78 @@
                         <div class="search__cart-wrapper">
                             <i class="search__cart--icon fa-solid fa-cart-shopping"></i>
 
+                            <span class="search__cart-badge search__cart-infor--no-cart">3</span>
+                            <span class="search__cart-badge">2</span>
 
-                            <div class="search__cart-list search__cart-list--no-cart">
+                            <!-- CART -->
+
+                            <!-- Valid cart -->  
+                            <div class="search__cart-infor">
+
+                            <!-- No cart -->
+                            <!-- <div class="search__cart-infor search__cart-infor--no-cart"> -->
+
                                 <img src="assets/img/empty-cart.png" alt="" class="search__cart-img">
                                 <p class="search__cart-msg">Chưa có sản phẩm</p>
+
+                                <span class="search__cart-heading">Sản phẩm đã thêm</span>
+
+                                <ul class="search__cart-list">
+                                    <li class="search__cart-item">
+                                        <img src="assets/img/images.jpg" alt="" class="search__cart-item-img">
+
+                                        <div class="search__cart-item-infor">
+                                            <div class="search__cart-item-heading">
+                                                <div class="search__cart-item-name">Bộ kem đặc trị vùng mắt</div>
+
+                                                <span class="search__cart-item-price">2.000.000đ</span>
+
+                                                <span class="search__cart-item-multiply">x</span>
+
+                                                <span class="search__cart-item-quantity">1</span>
+                                            </div>
+
+                                            <div class="search__cart-item-body">
+                                                <span class="search__cart-item-description">
+                                                    Phân loại hàng: Bạc
+                                                </span>
+
+                                                <span class="search__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="search__cart-item">
+                                        <img src="assets/img/images.jpg" alt="" class="search__cart-item-img">
+
+                                        <div class="search__cart-item-infor">
+                                            <div class="search__cart-item-heading">
+                                                <div class="search__cart-item-name">Bộ kem đặc trị vùng mắt</div>
+
+                                                <span class="search__cart-item-price">2.000.000đ</span>
+
+                                                <span class="search__cart-item-multiply">x</span>
+
+                                                <span class="search__cart-item-quantity">1</span>
+                                            </div>
+
+                                            <div class="search__cart-item-body">
+                                                <span class="search__cart-item-description">
+                                                    Phân loại hàng: Bạc
+                                                </span>
+
+                                                <span class="search__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="search__cart-remove__container">
+                                    <button class="search__cart-remove__btn btn btn--primary btn--s">Xem giỏ hàng</button>
+                                </div>
                             </div>
+
+                            <!-- CART -->
                         </div>
                     </div>
                 </div>
