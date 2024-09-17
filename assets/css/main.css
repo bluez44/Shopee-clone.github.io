@@ -14,6 +14,7 @@
     list-style: none;
     padding: 0;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .header__navbar .navbar__list .navbar__item:hover,
@@ -26,7 +27,7 @@
 .header__navbar .navbar__item {
     display: inline-flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;
     font-weight: 150;
 }   
@@ -34,10 +35,16 @@
 .header__navbar .navbar__item {
     color: var(--white-color);
     transition: all .3s;
+    height: 100%;
 }
 
 .header__navbar .navbar__item--link {
     color: inherit;
+}
+
+
+.header__navbar .navbar__item--link:first-child .navbar__item--icon{
+    padding-left: 6px;
 }
 
 .header__navbar .navbar__item--icon {
@@ -48,7 +55,7 @@
 }
 
 .separate_bar {
-    height: 100%;
+    height: 60%;
     border-right: 1px solid #fff;
 }
 
@@ -75,7 +82,7 @@
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: 4px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     opacity: 1 !important;
 }
@@ -135,6 +142,10 @@
     padding: 12px 16px;
 }
 
+.navbar__user__item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 
 /* Header QR code */
 .qr__code {
@@ -149,6 +160,7 @@
     display: none;
     width: 186px;
     position: absolute;
+    z-index: 555;
     left: 0px;
     top: 100%;
     margin-left: 12px;
@@ -157,7 +169,7 @@
     padding-bottom: 0;
     background-color: #fff;
     border-radius: 2px;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.4);
     animation: fade-in ease .7s forwards;
 }
 
@@ -207,6 +219,8 @@
     will-change: opacity, transform;
     animation: header45deg ease-in .2s forwards;
     z-index: 555;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .header__notification::before {
@@ -430,7 +444,7 @@
 
 .search__box--selection {
     position: relative;
-    height: 100%;
+    height: 80%;
     padding: 0 16px;
     display: flex;
     align-items: center;
@@ -455,12 +469,13 @@
     top: 1px;
     font-size: 1.4rem;
     margin-left: 8px;
+    color: rgb(131, 131, 131);
 }
 
 .search__box--option {
     display: none;
     position: absolute;
-    top: calc(100% + 6px);
+    top: calc(100% + 10px);
     right: 0;
     border-radius: 3px;
     background-color: var(--white-color);
@@ -703,3 +718,224 @@
 .search__cart-infor--no-cart.search__cart-badge {
     display: none;
 }
+
+/* Container */
+.container {
+    background-color: #F5F5F5;
+    padding-top: 36px;
+}
+
+.category {
+    background-color: var(--white-color);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.category__heading {
+    margin: 0;
+    padding: 12px 16px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-family: sans-serif;
+}
+
+.category__heading-icon {
+    font-size: 1.3rem;
+    margin-right: 4px;
+}
+
+.category__list {
+
+}
+
+.category__item {
+    position: relative;
+    color: var(--text-color);
+    transition: background-color .3s;
+}
+
+.category__item:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.category__item:hover {
+    background-color: var(--primary-color-hov);
+    color: var(--primary-color);
+}
+
+.category__item:hover .category__item-link {
+    right: -4px;
+}
+
+.category__item:hover.category__item--active::before {
+    left: 20px;
+}
+
+.category__item--active {
+    color: var(--primary-color) !important;
+}
+
+.category__item--active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    border-width: 4px 0 4px 4px;
+    transform: translateY(-50%);
+    transition: left .2s;
+}
+
+.category__item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4rem;
+    padding: 12px 24px;
+    position: relative;
+    right: 0;
+    transition: right .2s;
+}
+
+.home__fillter {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 12px 22px;
+    border-radius: 3px;
+}   
+
+.home__fillter-label {
+    color: #555555;
+    font-size: 1.4rem;
+    margin-right: 16px;
+}
+
+.home__fillter-btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+
+.home__fillter--select__input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-width: 200px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.home__fillter--select__input:hover .select__input-list{
+    display: block;
+}
+
+.select__input-label {
+
+}
+
+.select__input-icon {
+    position: relative;
+    top: 1px;
+    font-size: 1.4rem;
+    margin-left: 8px;
+    color: rgb(131, 131, 131);
+}
+
+.select__input-list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    background-color: var(--white-color);
+}
+
+.select__input-list::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+}
+
+.select__input-item {
+    transition: background-color .2s;
+}
+
+.select__input-item:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.select__input-item:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.select__input-item:hover {
+    background-color: var(--primary-color-hov);
+}
+
+.select__input-item:hover .select__input-link {
+    color: var(--primary-color);
+}
+
+.select__input-link {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color .2s;
+}
+
+
+
+.home__fillter--paging {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home__fillter--page__num {
+    margin-right: 22px;
+    font-size: 1.3rem;
+}
+
+.home__fillter--current__page {
+    color: var(--primary-color);
+}
+
+.home__fillter--navigation {
+    display: flex;
+    border-radius: 2px;
+}
+
+.home__fillter--page__btn {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    background-color: var(--white-color);
+    text-decoration: none;
+}
+
+.home__fillter--page__btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home__fillter--page__btn--disable {
+    background-color: #F9F9F9;
+    color: #ccc;
+    cursor: default;
+}
+
+.home__fillter--page__btn i {
+    margin: auto;
+}
+
+
+/* Container */
