@@ -14,11 +14,14 @@
     --header-height: 120px;
     --header__navbar-height: 38px;
     --header__search_bar-height: calc(var(--header-height) - var(--header__navbar-height));
+
+    --star-gold-color: #FFCE3E;
 }
 
 * {
     box-sizing: border-box;
     /* margin: 0; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -302,4 +305,9 @@ ul {
 .form--google_btn:hover {
     background-color: var(--black-color);
     color: var(--white-color);
+}
+
+.text--disable {
+    text-decoration: line-through !important;
+    color: #888 !important;
 }
