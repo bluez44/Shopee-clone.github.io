@@ -825,7 +825,8 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    min-width: 200px;
+    max-width: 200px;
+    flex: 1;
     padding: 8px 12px;
     border-radius: 3px;
     background-color: var(--white-color);
@@ -940,6 +941,10 @@
 
 
 /* Product list */
+
+.product__list {
+    margin-bottom: 30px;
+}
 
 .product__list-item {
     position: relative;
@@ -1124,3 +1129,99 @@
 /* Product list */
 
 /* Container */
+
+
+/* Footer */
+
+.footer {
+    border-top: 4px solid var(--primary-color);
+}
+
+.footer__item {
+    padding-top: 20px;
+}
+
+.footer__item-heading {
+    margin: 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer__item-list {
+    margin-top: 16px;
+}
+
+.footer__item-list__item {
+
+}
+
+.footer__item-list__item:hover .footer__item-list__item-link {
+    color: var(--primary-color);
+}
+
+
+.footer__item-list__item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 6px 0;
+    transition: color .3s;
+}
+
+.footer__item-list__item-icon {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.footer__item-list__item-icon--facebook {
+    
+}
+
+.footer__item-list__item-icon--instagram {
+
+}
+
+.footer__item-list__item-icon--linkedin {
+
+}
+
+
+.footer__item-download {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__item-download__qr {
+    width: 80px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer__item-download__apps {
+}
+
+.footer__item-download__apps-link {
+    text-decoration: none;
+}
+
+.footer__item-download__apps-img {
+    width: 100%;
+}
+
+
+.footer__copyright {
+    background-color: #F5F5F5;
+    padding: 6px 0;
+}
+
+.footer__copyright-text {
+    text-align: center;
+    color: #737373;
+}
+
+
+/* Footer */

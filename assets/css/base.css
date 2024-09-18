@@ -177,9 +177,6 @@ ul {
     margin-bottom: 48px;
 }
 
-.form--services div {
-}
-
 .form--services a {
     text-decoration: none;
     padding: 8px;
@@ -310,4 +307,48 @@ ul {
 .text--disable {
     text-decoration: line-through !important;
     color: #888 !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__item {
+}
+
+.pagination__item:hover .pagination__item--link{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination__item:first-child:hover .pagination__item--link,
+.pagination__item:last-child:hover .pagination__item--link,
+.pagination__item:nth-last-child(2):hover .pagination__item--link {
+    color: var(--primary-color);
+    background-color: var(--primary-color-hov) !important;
+}
+
+.pagination__item--link {
+    --height: 30px;
+    display: inline-block;
+    min-width: 40px;
+    height: var(--height);
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+    transition: background-color .3s;
+}
+
+.pagination__item--icon {
+    font-size: 1.2rem;
+}
+
+.pagination__item--active a{
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
